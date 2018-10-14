@@ -2620,6 +2620,7 @@ augroup END
 " Section: :Gpush, :Gfetch
 
 call s:command("-nargs=? -bang -complete=custom,s:RemoteComplete Gpush  execute s:Dispatch('<bang>', 'push '.<q-args>)")
+call s:command("-nargs=? -bang -complete=custom,s:RemoteComplete Gpushu  execute s:Dispatch('<bang>', 'pushu '.<q-args>)")
 call s:command("-nargs=? -bang -complete=custom,s:RemoteComplete Gfetch execute s:Dispatch('<bang>', 'fetch '.<q-args>)")
 
 function! s:Dispatch(bang, args)
